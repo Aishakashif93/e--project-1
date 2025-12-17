@@ -7,15 +7,17 @@
   
   
   
-  .section-1 {
-      background-image: url("./e\ project\ home\ image.webp");
-      /* width: 1500px; */
-      height: 650px;
-      display: flex;
-      justify-content: center;
-      margin: 0% 0% 0% -2%;
-      /* align-items: center; */
-  }
+.section-1 {
+    background-image: url("./e\ project\ home\ image.webp");
+    /* width: 1500px; */
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    margin: 0% 0% 0% -2%;
+    /* align-items: center; */
+    background-repeat: no-repeat;
+    background-position: center;
+}
   h1 {
   
       max-width: 72%;
