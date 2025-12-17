@@ -1,0 +1,57 @@
+:root { 
+    --main-bg-color: #967a2c;
+    --main-text-color: #333;
+  }
+  
+  
+  
+  
+  
+  .section-1 {
+      background-image: url("./e\ project\ home\ image.webp");
+      /* width: 1500px; */
+      height: 650px;
+      display: flex;
+      justify-content: center;
+      margin: 0% 0% 0% -2%;
+      /* align-items: center; */
+  }
+  h1 {
+  
+      max-width: 72%;
+      text-align: center;
+      margin: 5% 0% 0% 14%;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 700;
+      text-transform: uppercase;
+  
+  }
+  h1.home-heading {
+      margin-top: 100px;
+      margin-bottom: 30px;
+  }
+  h1.home-heading span {
+  color: var(--main-bg-color);
+  }
+  p {
+      display: flex;
+      justify-content: center;
+      margin-top: 3%;
+      font-size: 20px;
+  }
+  i.bi.bi-people-fill {
+      font-size: 43px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  h3.card-title {
+      max-width: 484px;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+  }
+  .card:hover {
+  border: 1.5px solid var(--main-bg-color);
+  transition: 2ms;
+  }
