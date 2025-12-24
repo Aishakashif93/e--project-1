@@ -238,3 +238,20 @@ button.btn.btn-light.btn-lg:hover {
     transition: 1ms;
         transform: scale(1.05);
 }
+img.img-fluid.about-img-birthday {
+    width: 97%;
+    height: 419px;
+    object-fit: cover;
+    border-radius: 35px;
+}
+.invitation-bg-birthday {
+    background-image: url("./ChatGPT\ Image\ Dec\ 23\,\ 2025\,\ 09_47_54\ PM.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 99vh;
+    max-height: 700px;
+    display: flex;
+    align-items: center;
+    padding: 40px 80px;
+}
