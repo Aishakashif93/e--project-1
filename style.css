@@ -151,3 +151,90 @@ color: var(--main-bg-color);
   color: #c8a45d;
   font-size: 22px;
 }
+.invitation-bg{
+    background-image: url("./Scroll-invitation.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 80vh;
+    max-height: 700px;
+
+    display: flex;
+    align-items: center;
+    padding: 40px 80px;
+}
+
+/* desktop right alignment */
+.hero-text{
+    margin-left: auto;          /* push content to right */
+    text-align: right;          /* text right */
+    padding-right: 20px;
+}
+
+.hero-text h1 {
+    color: #7a5c1e;
+    font-size: 57px;
+    font-weight: 700;
+}
+h2{
+     color: #7a5c1e;
+    font-size: 40px;
+    font-weight: 700;
+}
+.hero-text p {
+    color: #8b6b2c;
+    font-size: 23px;
+}
+
+/* mobile */
+@media (max-width: 768px){
+    .hero-text{
+        margin-left: 0;
+        text-align: center;
+        padding-right: 0;
+    }
+}
+
+img.img-fluid.about-img {
+    width: 94%;
+    height: 336px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+button.btn.btn-light.btn-lg {
+      width: 36%;
+    min-width: 180px;               /* button collapse nahi hoga */
+    max-width: 260px;               /* desktop pe over wide nahi */
+    height: 55px;   
+    height: 59px;
+    border-radius: 31px;
+}
+button.btn.btn-light.btn-lg:hover{
+       background: linear-gradient(135deg, #534517, #ecb604); /* orange-pink gradient */
+}
+.row.about.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+.brand-para{
+    font-size: 18px;
+}
+
+
+
+p.brand-para {
+    max-width: 87%;
+}
+.row.about {
+    display: flex;
+    align-items: center;
+}
+button.btn.btn-light.btn-lg:hover {
+     transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    border: none;
+    transition: 1ms;
+        transform: scale(1.05);
+}
