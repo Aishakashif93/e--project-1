@@ -209,11 +209,14 @@ h2{
     }
 }
 
-img.img-fluid.about-img {
-    width: 94%;
-    height: 336px;
-    object-fit: cover;
-    border-radius: 12px;
+
+img.img-fluid.about-img :hover{
+  transform: translateY(-20px);
+    transition: transform 0.5s ease;
+}
+img.img-fluid.about-img:hover{
+   transform: translateY(-20px);
+    transition: transform 0.5s ease;
 }
 button.btn.btn-light.btn-lg {
       width: 36%;
@@ -223,8 +226,9 @@ button.btn.btn-light.btn-lg {
     height: 59px;
     border-radius: 31px;
 }
-button.btn.btn-light.btn-lg:hover{
-       background: linear-gradient(135deg, #534517, #ecb604); /* orange-pink gradient */
+img.img-fluid.about-img-birthday:hover {
+transform: translateY(-20px);
+    transition: transform 0.5s ease;
 }
 .row.about.reverse {
     display: flex;
@@ -244,6 +248,7 @@ p.brand-para {
     display: flex;
     align-items: center;
 }
+
 button.btn.btn-light.btn-lg:hover {
      transform: translateY(-4px) scale(1.03);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
@@ -251,7 +256,10 @@ button.btn.btn-light.btn-lg:hover {
     transition: 1ms;
         transform: scale(1.05);
 }
-img.img-fluid.about-img-birthday {
+button.btn.btn-light.btn-lg:hover{
+       background: linear-gradient(135deg, #534517, #ecb604); /* orange-pink gradient */
+}
+img.img-fluid.about-img-birthday,img.img-fluid.about-img {
     width: 97%;
     height: 419px;
     object-fit: cover;
