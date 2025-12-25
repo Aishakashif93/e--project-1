@@ -164,6 +164,19 @@ color: var(--main-bg-color);
     align-items: center;
     padding: 40px 80px;
 }
+.invitation-bg-engagment{
+      background-image: url("./download\ \(3\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 80vh;
+    max-height: 700px;
+
+    display: flex;
+    align-items: center;
+    padding: 40px 80px;
+}
 
 /* desktop right alignment */
 .hero-text{
