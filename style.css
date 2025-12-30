@@ -276,3 +276,25 @@ img.img-fluid.about-img-birthday,img.img-fluid.about-img {
     align-items: center;
     padding: 40px 80px;
 }
+.invitation-bg-anniversery {
+    background-image: url("./ChatGPT\ Image\ Dec\ 25\,\ 2025\,\ 03_17_41\ AM.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 99vh;
+    max-height: 700px;
+    display: flex;
+    align-items: center;
+    padding: 40px 80px;
+}
+.invitation-bg-bridalshower {
+    background-image: url("./ChatGPT\ Image\ Dec\ 25\,\ 2025\,\ 06_01_26\ AM.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 99vh;
+    max-height: 700px;
+    display: flex;
+    align-items: center;
+    padding: 40px 80px;
+}
