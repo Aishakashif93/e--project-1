@@ -164,107 +164,150 @@ color: var(--main-bg-color);
     align-items: center;
     padding: 40px 80px;
 }
-.invitation-bg-engagment{
-      background-image: url("./download\ \(3\).jpg");
+/* Invitation Background */
+.invitation-bg-anniversery {
+    background-image: url("./download\ (3).jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     height: 80vh;
     max-height: 700px;
-
     display: flex;
     align-items: center;
     padding: 40px 80px;
 }
 
-/* desktop right alignment */
-.hero-text{
-    margin-left: auto;          /* push content to right */
-    text-align: right;          /* text right */
+/* Desktop Right Alignment for Hero Text */
+.hero-text {
+    margin-left: auto; /* push content to right */
+    text-align: right; /* text right */
     padding-right: 20px;
 }
 
+/* Hero Text Styling */
 .hero-text h1 {
     color: #7a5c1e;
     font-size: 57px;
     font-weight: 700;
 }
-h2{
-     color: #7a5c1e;
+
+h2 {
+    color: #7a5c1e;
     font-size: 40px;
     font-weight: 700;
 }
+
 .hero-text p {
     color: #8b6b2c;
     font-size: 23px;
 }
 
-/* mobile */
-@media (max-width: 768px){
-    .hero-text{
+/* Mobile Styling for Hero Section */
+@media (max-width: 768px) {
+    .hero-text {
         margin-left: 0;
         text-align: center;
         padding-right: 0;
+        padding-left: 15px;
+    }
+    .hero-text h1 {
+        font-size: 32px; /* smaller font size for mobile */
+    }
+    .hero-text p {
+        font-size: 18px; /* smaller font size */
     }
 }
 
+/* Image Hover Effect */
+img.img-fluid.about-img:hover {
+    transform: translateY(-20px);
+    transition: transform 0.5s ease;
+}
 
-img.img-fluid.about-img :hover{
-  transform: translateY(-20px);
+img.img-fluid.about-img-birthday:hover {
+    transform: translateY(-20px);
     transition: transform 0.5s ease;
 }
-img.img-fluid.about-img:hover{
-   transform: translateY(-20px);
-    transition: transform 0.5s ease;
-}
+
+/* Button Styling */
 button.btn.btn-light.btn-lg {
-      width: 36%;
-    min-width: 180px;               /* button collapse nahi hoga */
-    max-width: 260px;               /* desktop pe over wide nahi */
-    height: 55px;   
+    width: 36%;
+    min-width: 180px; /* prevent button from collapsing */
+    max-width: 260px; /* prevent button from being too wide on desktop */
+    height: 55px;
     height: 59px;
     border-radius: 31px;
 }
-img.img-fluid.about-img-birthday:hover {
-transform: translateY(-20px);
-    transition: transform 0.5s ease;
-}
-.row.about.reverse {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-}
-.brand-para{
-    font-size: 18px;
-}
 
-
-
-p.brand-para {
-    max-width: 87%;
-}
-.row.about {
-    display: flex;
-    align-items: center;
-}
-
+/* Button Hover Effect */
 button.btn.btn-light.btn-lg:hover {
-     transform: translateY(-4px) scale(1.03);
+    transform: translateY(-4px) scale(1.03);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
     border: none;
     transition: 1ms;
-        transform: scale(1.05);
+    transform: scale(1.05);
 }
-button.btn.btn-light.btn-lg:hover{
-       background: linear-gradient(135deg, #534517, #ecb604); /* orange-pink gradient */
+
+button.btn.btn-light.btn-lg:hover {
+    background: linear-gradient(135deg, #534517, #ecb604); /* orange-pink gradient */
 }
-img.img-fluid.about-img-birthday,img.img-fluid.about-img {
+
+/* Image Styling */
+img.img-fluid.about-img-birthday,
+img.img-fluid.about-img {
     width: 97%;
     height: 419px;
     object-fit: cover;
     border-radius: 35px;
 }
+
+/* Responsive Layout for About Sections */
+.row.about.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.brand-para {
+    font-size: 18px;
+    max-width: 87%;
+}
+
+/* p.brand-para {
+    max-width: 87%;
+} */
+
+.row.about {
+    display: flex;
+    align-items: center;
+}
+
+/* Mobile Responsiveness for About Section Layout */
+@media (max-width: 768px) {
+    .about .col-lg-6 {
+        width: 100%; /* Stack text and image vertically */
+        text-align: center;
+    }
+    .about-img-birthday,
+    .about-img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Adjust height based on width */
+    }
+    .hero-text h1 {
+        font-size: 30px;
+    }
+    .brand-para {
+        font-size: 16px;
+    }
+    .row.about.reverse {
+        flex-direction: column;
+    }
+    button.btn.btn-light.btn-lg {
+        width: 80%; /* Increase button width on mobile */
+        min-width: 160px;
+    }
+}
+
 .invitation-bg-birthday {
     background-image: url("./ChatGPT\ Image\ Dec\ 23\,\ 2025\,\ 09_47_54\ PM.png");
 }
@@ -278,10 +321,10 @@ img.img-fluid.about-img-birthday,img.img-fluid.about-img {
   background-image: url("./graduation-her-\ image.png");
 }
 .invitation-bg-graduation,.invitation-bg-bridalshower,.invitation-bg-anniversery,.invitation-bg-birthday{
-   background-size: cover;
+     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 99vh;
+    height: 80vh;
     max-height: 700px;
     display: flex;
     align-items: center;
