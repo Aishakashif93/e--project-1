@@ -330,46 +330,46 @@ img.img-fluid.about-img {
     align-items: center;
     padding: 40px 80px;
 }
-  /* Section background */
+   /* Section background */
 .about-section {
   background-color: #f5f5f5;
 }
 
 /* Card styling */
 .about-card {
-  background: #ffffff;
-  padding: 60px 50px;
-  border-radius: 5rem;
-
-  /* Box Shadow */
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-
-  transition: all 0.3s ease-in-out;
-
+    background: #ffffff;
+    padding: 60px 50px;
+    border-radius: 5rem;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+ max-width: 1100px;
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* Title */
 .about-title {
-  font-size: 38px;
-  font-weight: 800;
-  margin-bottom: 10px;
-  color: #000;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff !important;
 }
 
 /* Subtitle */
 .about-subtitle {
   font-size: 24px;
   font-weight: 600;
-  color: black
+  color: rgb(255, 255, 255)
    
 }
 
 /* Paragraph text */
 .about-text {
-  font-size: 17px;
-  line-height: 1.8;
-  color: #555;
-  margin-bottom: 35px;
+    font-size: 20px !important;
+    line-height: 1.6;
+    color: #fffdfd !important;
+    margin-bottom: 1.5rem;
 }
 
 /* Button custom style */
@@ -447,4 +447,7 @@ hr {
   .about-text {
     font-size: 1rem;
   }
+}
+.about-card.text-center {
+    background-image: url(./abot-img.png);
 }
