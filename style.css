@@ -1,24 +1,17 @@
 :root { 
     --main-bg-color: #967a2c;
     --main-text-color: #333;
+   --main-color: #000000;
+   --main-light-color: #ffffff;
+   --main-background-color:#61521f;
+    --main-background2-color: #ecb604;
   }
-  
-  span:hover {
+span.title.fs-4:hover {
 color: var(--main-bg-color);
 }
-
-
-
-/* a:hover {
-  color: #000;
-   
-} */
-
 .template-grid a.template-card:hover {
-    color: #000;
+    color:var(--main-color);
 }
-  
-  
 .section-1 {
     background-image: url("./e\ project\ home\ image.webp");
     /* width: 1500px; */
@@ -31,19 +24,18 @@ color: var(--main-bg-color);
     background-position: center;
 }
   h1 {
-  
-      max-width: 72%;
       text-align: center;
-      margin: 5% 0% 0% 14%;
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
-      font-weight: 700;
+      font-weight: bold;
       text-transform: uppercase;
   
   }
   h1.home-heading {
+     margin: 5% 0% 0% 14%;
       margin-top: 100px;
       margin-bottom: 30px;
+       max-width: 72%;
   }
   h1.home-heading span {
   color: var(--main-bg-color);
@@ -74,13 +66,9 @@ color: var(--main-bg-color);
     max-width: 1200px;
     margin: 0 auto;
 }
-
- 
-
-
 .hero {
   padding: 80px 20px;
-  background: #ffffff;
+  background:var(--main-light-color);
   text-align: center;
 }
 
@@ -88,20 +76,11 @@ color: var(--main-bg-color);
   max-width: 1100px;
   margin: 0 auto;
 }
-
-.hero h1 {
-  font-size: 42px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-}
-
 .hero h1 span {
   display: block;
   margin-top: 10px;
   font-weight: 700;
 }
-
 .hero p {
   max-width: 850px;
   margin: 0 auto 60px;
@@ -109,13 +88,11 @@ color: var(--main-bg-color);
   font-size: 16px;
   line-height: 1.6;
 }
-
 .template-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
 }
-
 .template-card {
   display: flex;
   align-items: center;
@@ -124,58 +101,27 @@ color: var(--main-bg-color);
   border: 1px solid #e5e5e5;
   border-radius: 40px;
   text-decoration: none;
-  color: #000;
+  color:var(--main-color);
   font-size: 18px;
   transition: all 0.3s ease;
 }
-
 .template-card:hover {
-  border-color: #c8a45d;
+  border-color: var(--main-bg-color);
   transform: translateY(-2px);
 }
-
 .icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: #000;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
+   background: var(--main-color);
+    padding: 15px 20px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
 }
-
 .arrow {
   margin-left: auto;
-  color: #c8a45d;
+  color: var(--main-bg-color);
   font-size: 22px;
 }
-.invitation-bg{
-    background-image: url("./Scroll-invitation.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 
-    height: 80vh;
-    max-height: 700px;
-
-    display: flex;
-    align-items: center;
-    padding: 40px 80px;
-}
-/* Invitation Background */
-.invitation-bg-anniversery {
-    background-image: url("./download\ (3).jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 80vh;
-    max-height: 700px;
-    display: flex;
-    align-items: center;
-    padding: 40px 80px;
-}
 
 /* Desktop Right Alignment for Hero Text */
 .hero-text {
@@ -184,37 +130,57 @@ color: var(--main-bg-color);
     padding-right: 20px;
 }
 
-/* Hero Text Styling */
-.hero-text h1 {
-    color: #7a5c1e;
-    font-size: 57px;
-    font-weight: 700;
+.invitation-bg-wedding {
+    background-image: url("./Scroll-invitation.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;           /* Desktop height */
+    max-height: 700px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    color: #000000;
+  
 }
 
-h2 {
-    color: #7a5c1e;
-    font-size: 40px;
-    font-weight: 700;
+/* Hero text */
+.hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+      font-size: 45px !important;
 }
 
 .hero-text p {
-    color: #8b6b2c;
-    font-size: 23px;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
-/* Mobile Styling for Hero Section */
-@media (max-width: 768px) {
-    .hero-text {
-        margin-left: 0;
-        text-align: center;
-        padding-right: 0;
-        padding-left: 15px;
+/* Responsive Adjustments */
+@media (max-width: 991px) {  /* Tablets */
+    .invitation-bg-wedding{
+        height: 70vh;
+        padding: 0 30px;
     }
     .hero-text h1 {
-        font-size: 32px; /* smaller font size for mobile */
+        font-size: 2rem;
     }
     .hero-text p {
-        font-size: 18px; /* smaller font size */
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 575px) { /* Mobile */
+    .invitation-bg-wedding{
+        height: 60vh;
+        padding: 0 20px;
+    }
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+    .hero-text p {
+        font-size: 0.9rem;
     }
 }
 
@@ -249,7 +215,7 @@ button.btn.btn-light.btn-lg:hover {
 }
 
 button.btn.btn-light.btn-lg:hover {
-    background: linear-gradient(135deg, #534517, #ecb604); /* orange-pink gradient */
+     background: linear-gradient(135deg, var(--main-background-color), var(--main-background2-color)); /* orange-pink gradient */
 }
 
 /* Image Styling */
@@ -297,8 +263,9 @@ img.img-fluid.about-img {
         font-size: 30px;
     }
     .brand-para {
-        font-size: 16px;
-    }
+    font-size: 16px;
+    margin: 0 auto;
+}
     .row.about.reverse {
         flex-direction: column;
     }
@@ -320,7 +287,13 @@ img.img-fluid.about-img {
 .invitation-bg-graduation{
   background-image: url("./graduation-her-\ image.png");
 }
-.invitation-bg-graduation,.invitation-bg-bridalshower,.invitation-bg-anniversery,.invitation-bg-birthday{
+.invitation-bg-engagment{
+   background-image: url("./download\ \(3\).jpg");
+}
+.invitation-bg-wedding{
+  background-image: url("./Scroll-invitation.jpg");
+}
+.invitation-bg-graduation,.invitation-bg-bridalshower,.invitation-bg-anniversery,.invitation-bg-birthday,.invitation-bg-engagment,.invitation-bg-wedding{
      background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -332,15 +305,14 @@ img.img-fluid.about-img {
 }
    /* Section background */
 .about-section {
-  background-color: #f5f5f5;
+  background-color:var(--main-light-color);
 }
 
 /* Card styling */
 .about-card {
-    background: #ffffff;
-    padding: 60px 50px;
+    background: var(--main-light-color);
+    /* padding: 60px 50px; */
     border-radius: 5rem;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease-in-out;
  max-width: 1100px;
     height: 500px;
@@ -360,15 +332,15 @@ img.img-fluid.about-img {
 .about-subtitle {
   font-size: 24px;
   font-weight: 600;
-  color: rgb(255, 255, 255)
+  color: var(--main-light-color)
    
 }
 
 /* Paragraph text */
 .about-text {
     font-size: 20px !important;
-    line-height: 1.6;
-    color: #fffdfd !important;
+    line-height: 1.4;
+    color: var(--main-light-color)!important;
     margin-bottom: 1.5rem;
 }
 
@@ -383,7 +355,7 @@ img.img-fluid.about-img {
 
 
 .content-section {
-  background-color: #000;
+  background-color:var(--main-color);
 }
 
 .section-title {
@@ -409,14 +381,14 @@ img.img-fluid.about-img {
 
 
 .about-section {
-  background-color: #ffffff;
+  background-color:var(--main-light-color);
 }
 
 .about-title {
   font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #000;
+  color:var(--main-color);
 }
 
 .about-text {
@@ -429,13 +401,13 @@ img.img-fluid.about-img {
 .about-highlight {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #000;
+  color:var(--main-color);
 }
 
 hr {
   
   margin: 20px auto;
-  border-top: 2px solid #000;
+  border-top: 2px solid var(--main-color);
 }
 
 /* Responsive */
