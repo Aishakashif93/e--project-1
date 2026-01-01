@@ -1,5 +1,5 @@
 :root { 
-    --main-bg-color: #967a2c;
+    --main-bg-color: #d3b76c;
     --main-text-color: #333;
    --main-color: #000000;
    --main-light-color: #ffffff;
@@ -33,7 +33,7 @@ color: var(--main-bg-color);
   }
   h1.home-heading {
      margin: 5% 0% 0% 14%;
-      margin-top: 100px;
+      margin-top: 160px;
       margin-bottom: 30px;
        max-width: 72%;
   }
@@ -325,14 +325,14 @@ img.img-fluid.about-img {
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #ffffff !important;
+    color: var(--main-color) !important;
 }
 
 /* Subtitle */
 .about-subtitle {
   font-size: 24px;
   font-weight: 600;
-  color: var(--main-light-color)
+  color: var(--main-color)
    
 }
 
@@ -340,7 +340,7 @@ img.img-fluid.about-img {
 .about-text {
     font-size: 20px !important;
     line-height: 1.4;
-    color: var(--main-light-color)!important;
+    color: var(--main-text-color)!important;
     margin-bottom: 1.5rem;
 }
 
@@ -422,4 +422,147 @@ hr {
 }
 .about-card.text-center {
     background-image: url(./abot-img.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+.glass-header {
+  background: rgba(245, 242, 242, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 9999;
+}
+
+/* Logo text */
+.navbar-brand span {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+/* Menu links */
+.nav-link {
+  color: #494747 !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--main-bg-color) !important;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  background: rgba(241, 240, 240, 0.95);
+  border: none;
+}
+
+.dropdown-item {
+  color: var(--main-color);
+}
+
+.dropdown-item:hover {
+  background: var(--main-bg-color);
+  color:var(--main-color);
+}
+
+/* Register Button */
+.btn-register {
+  border: 1px solid var(--main-bg-color);
+  color: var(--main-bg-color);
+  padding: 6px 16px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn-register:hover {
+  background: var(--main-bg-color);
+  color: var(--main-color) !important;
+}
+
+/* Responsive SVG logo */
+.navbar-brand svg {
+  max-width: 180px;
+  height: auto;
+}
+
+@media (max-width: 991px) {
+  .navbar-brand svg {
+    max-width: 140px;
+  }
+  .btn-register {
+    padding: 5px 14px;
+    font-size: 0.9rem;
+  }
+  .nav-link {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .navbar-brand svg {
+    max-width: 120px;
+  }
+  .btn-register {
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+}
+.navbar-brand svg {
+    width: 500px;
+    height: 68px;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .navbar-brand svg {
+    width: 300px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+  .navbar-brand svg {
+    width: 200px;
+    
+  }
+  
+}
+.btn-register {
+    border: 1px solid var(--main-bg-color) !important;
+    color: var(--main-bg-color) !important;
+    padding: 6px 16px !important;
+    border-radius: 30px !important;
+    transition: 0.3s !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.col-md-6.text-center.text-md-start.hero-text {
+    max-width: 39%;
+    margin-right: 40px;
 }
