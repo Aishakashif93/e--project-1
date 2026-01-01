@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Registration</title>
+<link rel="stylesheet" href="style.css">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- Thank You Popup -->
+<div class="thankyou-popup">
+  <div class="popup-box">
+    <h2 style="color: #2c2c2c;" class="md-3">🎉 Thank You!</h2>
+    <p style="  color: #555;
+  font-size: 15px;
+  line-height: 1.6;">
+      Your registration has been successfully submitted.<br>
+      We’re excited to have you as part of <b>INVITATIONS</b>.
+    </p>
+    <p class="small-text" style=" font-size: 13px;
+  color: #777;
+  margin-top: 10px;">
+      Our team will contact you shortly. Stay connected!
+    </p>
+    <button class="close-popup mt-3">Close</button>
+  </div>
+</div>
+
+
+<section id="heading section">
+  <div class="container">
+    <div class="row-heading">
+      <div class="col">
+        <h1 class="home-heading-rejister">
+   Plan Your <span>Perfect Event</span>– Start Here
+</h1>
+<p class="d-flex justify-content-center align-items-center text-center">Register to get expert event planning support, personalized quotes, and exclusive deals on premium services.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="form" class="pt-5 d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+  <form id="rejestration-form">
+    <div class="row mt-4">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="First name"  id="firstnamereg" required="">
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Last name" id="surnamereg" required="">
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col">
+        <input type="email" class="form-control" placeholder="Email address" id="emailreg" name="email"  required="">
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col">
+        <input type="tel" class="form-control" placeholder="Phone number" id="phonereg"  oninput="formatPhone(this)" pattern="[0-9]{11}"
+  maxlength="11" required="">
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col">
+        <input type="password" class="form-control"  minlength="6" placeholder="Password">
+      </div>
+    </div>
+
+    <div class="row align-items-center mt-5">
+      <div class="col d-flex align-items-center justify-content-center">
+        <input class="form-check-input" type="checkbox" id="terms">
+        <label class="form-check-label ms-2" for="terms">
+          I accept ClickInvitation’s Terms of Service
+        </label>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-12">
+        <button class="btn btn-primary w-100">Create Account</button>
+      </div>
+    </div>
+
+  </form>
+</section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
+
