@@ -46,7 +46,7 @@ color: var(--main-bg-color);
       margin-top: 3%;
       font-size: 20px;
   }
-  i.bi.bi-people-fill {
+  i.bi.bi-people-fill,.bi.bi-camera-fill,.bi.bi-phone-vibrate-fill,.bi.bi-calendar-heart-fill,.bi.bi-kanban,.bi.bi-shield-lock-fill {
       font-size: 43px;
       display: flex;
       justify-content: center;
@@ -288,7 +288,7 @@ img.img-fluid.about-img {
   background-image: url("./graduation-her-\ image.png");
 }
 .invitation-bg-engagment{
-   background-image: url("./download\ \(3\).jpg");
+   background-image: url("./engagment\ hero\ sec\ image.png");
 }
 .invitation-bg-wedding{
   background-image: url("./Scroll-invitation.jpg");
@@ -482,7 +482,7 @@ hr {
 }
 
 .btn-register:hover {
-  background: var(--main-bg-color);
+  background: linear-gradient(135deg, #dbcd4c, #5a4b06);
   color: var(--main-color) !important;
 }
 
