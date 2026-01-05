@@ -104,3 +104,48 @@ body{
     padding: 30px 15px;
   }
 }
+body{
+  background-color:#faf7f2;
+}
+
+/* Section heading */
+.section-title{
+  text-align:center;
+  margin:50px 0 35px;
+  font-weight:700;
+}
+
+/* Card design */
+.custom-card{
+  border:none;
+  border-radius:18px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.12);
+  overflow:hidden;
+  transition:0.3s ease;
+}
+
+.custom-card:hover{
+  transform:translateY(-6px);
+}
+
+/* Image size fix */
+.custom-card img{
+  height:320px;
+  object-fit:cover;
+}
+
+/* Text */
+.card-body h5{
+  font-weight:600;
+}
+
+.price{
+  font-weight:700;
+  display:block;
+}
+
+/* Button */
+.btn-dark{
+  border-radius:30px;
+  padding:8px 30px;
+}
