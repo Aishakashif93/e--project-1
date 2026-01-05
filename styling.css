@@ -1,0 +1,106 @@
+ h1 {
+      text-align: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: bold;
+      text-transform: uppercase;
+  
+  }
+  body{
+  background-color:#faf7f2;
+}
+
+/* ===== SAME CARD LOOK ===== */
+.card{
+  border:none;
+  border-radius:16px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+  height:100%;
+}
+
+/* ===== SAME IMAGE HEIGHT ===== */
+.card-img-top{
+  height:280px;
+  object-fit:cover;
+  border-radius:16px 16px 0 0;
+}
+.card:hover{
+  transform: translateY(-6px);
+}
+.card-body h5{
+  font-family:Georgia, serif;
+  font-weight:600;
+}
+
+.card-body p{
+  font-size:14px;
+  color:#555;
+}
+.mb-5 {
+    margin-bottom: 3rem!important;
+}
+p.contact-para.mb-5 {
+    max-width: 82%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 19px;
+}
+body{
+  background:#faf7f2;
+}
+
+/* ===== CARD GRID GAP ===== */
+.cards-wrapper{
+  padding: 60px 40px;
+}
+
+/* ===== CARD STYLE ===== */
+.wedding-card{
+  border: none;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: all .3s ease;
+  height: 100%;
+}
+
+.wedding-card:hover{
+  transform: translateY(-6px);
+}
+
+/* ===== IMAGE SIZE SAME ===== */
+.wedding-card img{
+  height: 280px;
+  object-fit: cover;
+  border-radius: 14px 14px 0 0;
+}
+
+/* ===== TEXT ===== */
+.wedding-card h5{
+  font-family: Georgia, serif;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.wedding-card p{
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.price{
+  font-weight: 600;
+}
+
+/* ===== BUTTON ===== */
+.wedding-card .btn{
+  border-radius: 8px;
+  padding: 8px 22px;
+}
+
+/* ===== RESPONSIVE GAP ===== */
+@media(max-width:768px){
+  .cards-wrapper{
+    padding: 30px 15px;
+  }
+}
