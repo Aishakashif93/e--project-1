@@ -150,5 +150,13 @@ body{
   padding:8px 30px;
 }
 
+@media (max-width: 768px) {
+.col-lg-4.col-md-6 {
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+h2.mb-4 {
+    margin-top: 38px;
+}
 
-    
+}
