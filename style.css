@@ -149,7 +149,7 @@ color: var(--main-bg-color);
     display: flex;
     align-items: center;
     padding: 0 40px;
-    color: #000000;
+    color: var(--main-color);
   
 }
 
@@ -610,7 +610,7 @@ form {
 .form-control:focus {
     outline: none;
     box-shadow: none;
-    border-color: #3a3109;
+    border-color: var(--main-background-color);
 }
 .form-check-input {
     width: 18px;
@@ -642,7 +642,7 @@ form {
 }
 .form-check-input:checked[type=checkbox] {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
-    background-color: rgb(112, 90, 17);
+    background-color: var(--main-bg-color);
     border: none;
 }
 
@@ -662,7 +662,7 @@ form {
     visibility: visible;
 }
 .popup-box {
-    background: #fff;
+    background:var(--main-light-color);
     padding: 32px;
     width: 100%;
     max-width: 406px;
@@ -673,8 +673,8 @@ form {
 }
 .popup-box button {
   /* margin-top: 20px; */
-  background: #000;
-  color: #fff;
+  background: var(--main-color);
+  color: var(--main-light-color);
   border: none;
   padding: 10px 25px;
   border-radius: 30px;
